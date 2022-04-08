@@ -8,6 +8,27 @@
 </head>
 <body>
     <p>日本の首都は？</p>
-    <input type="button" value="">
+<form action = "get.php" method = "GET">
+    <input type = "text" name ="getcomment"><br/>
+    <input type = "submit" value ="送信/">
+</form>
+
+<form action = "index.php" method = "POST">
+<input type = "text" name ="postcomment"><br/>
+<input type = "submit" value ="送信/">
+</form>
+
+<p>答え　
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_POST['postcomment'] === '東京') {
+        echo '正解';
+    } else {
+        echo '不正解';
+    }
+}
+?>
+</p>
+
 </body>
 </html>
