@@ -8,10 +8,10 @@
 </head>
 <body>
     <p>日本の首都は？</p>
-<form action = "get.php" method = "GET">
+<!-- <form action = "get.php" method = "GET">
     <input type = "text" name ="getcomment"><br/>
     <input type = "submit" value ="送信/">
-</form>
+</form> -->
 
 <form action = "index.php" method = "POST">
 <input type = "text" name ="postcomment"><br/>
