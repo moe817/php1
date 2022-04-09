@@ -18,9 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach($fruits as $fruit){
         if($_POST['arraysearch'] === $fruit){
             echo $fruit."は、配列に含まれています。";
-        } else {
-            echo $fruit."は、配列に含まれていません。";
+            $i = 1;
         }
+    }
+    if($i == 0){
+        echo $fruit."は、配列に含まれていません。";
     }
 }
 ?>
