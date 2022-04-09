@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <p>日本の首都は？</p>
+    <p>日本の首都はどこ？</p>
 <!-- <form action = "get.php" method = "GET">
     <input type = "text" name ="getcomment"><br/>
     <input type = "submit" value ="送信/">
