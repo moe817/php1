@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
     if($i == 0){
-        echo $fruit."は、配列に含まれていません。";
+        echo $_POST['arraysearch']."は、配列に含まれていません。";
     }
 }
 ?>
