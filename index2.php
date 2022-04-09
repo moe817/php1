@@ -17,7 +17,9 @@ $fruits = ['apple', 'orange', 'strawberry'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach($fruits as $fruit){
         if($_POST['arraysearch'] === $fruit){
-            echo $fruit;
+            echo $fruit."は、配列に含まれています。";
+        } else {
+            echo $fruit."は、配列に含まれていません。";
         }
     }
 }
